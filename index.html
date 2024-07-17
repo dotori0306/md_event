@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-eqiv="Content-Type" content="text/html" charset="euc-kr">
+	<meta name="viewport" content="width=1300, maximum-scale=1.5">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>성공을 위한 러닝 메이트 - 메가로스쿨</title>
+    <script type="text/javascript" src="http://img.megals.co.kr/common/js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="http://img.megals.co.kr/common/js/slides.min.jquery.js"></script>
+    <script type="text/javascript" src="http://img.megals.co.kr/common/js/rolling.js"></script>
+    <script type="text/javascript" src="http://img.megals.co.kr/common/js/inputPlaceholder.js"></script>
+	<!--2020.04.28 TweenMax 추가-->
+	<script type="text/javascript" src="http://img.megals.co.kr/common/js/TweenMax.min.js?ver=20200428"></script>
+	<script type="text/javascript" src="http://img.megals.co.kr/common/js/jquery.easing.min.js?ver=20200428"></script>
+	<!--//2020.04.28 TweenMax 추가-->
+    <script type="text/javascript" src="http://img.megals.co.kr/common/js/common.js?ver=20200211"></script>
+    <script type="text/javascript" src="http://img.megals.co.kr/common/js/gnb.js" ></script>
+    <script type="text/javascript" src="http://img.megals.co.kr/common/js/jcarousellite_1.0.1.pack.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://img.megals.co.kr/common/css/common.css" />
+	<script type="text/javascript" src="http://img.megals.co.kr/common/js/jquery.cycle.all.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://img.megals.co.kr/common/css/lecture.css" />
+    <link rel="stylesheet" type="text/css" href="http://img.megals.co.kr/common/css/professor.css" />
+    <link rel="stylesheet" type="text/css" href="http://img.megals.co.kr/common/css/academy.css" />
+	<link rel="stylesheet" type="text/css" href="http://img.megals.co.kr/common/css/curri.css" />
+	<script type="text/javascript" src="http://img.megals.co.kr/common/js/jquery.bxslider.js"></script> 
+	<link rel="stylesheet" type="text/css" href="http://img.megals.co.kr/common/css/mega_bxslider_ui.css">
+	<script type="text/javascript" src="http://img.megals.co.kr/common/js/mega_bxslider_ui.js"></script>
+</head>
+<body>
+	<div id="head" style="height:152px; background:#f3f3f5; line-height:152px; text-align:center;">HEADER</div>
+	<!--// GNB -->
+
+	<!-- container -->
+	<div id="container">
+
+		<!-- 풀페이지 시작 -->
+		<!-- LS 2월 신규가입 이벤트 -->
+		<style>
+			@import url('https://webfontworld.github.io/pretendard/Pretendard.css');
+			#mega_content { position:relative; }
+			#mega_content > [class^="stn_"] { position:relative;font-family: 'pretendard';}
+			#mega_content .inner { position:relative; width:1200px; margin:0 auto; text-align:center; }
+			#mega_content .stn_top{ background:#a4e6f4 url(http://img.megals.co.kr/2024/0226_newevt/newevt_top_bg.jpg) no-repeat center 0;}
+			#mega_content .stn_01 { background:#5ac53e;}
+			#mega_content .stn_01::before{content: '';position: absolute;bottom: 0;width: 100%;height: 174px;background: #4bbc2c;}
+			#mega_content .stn_02{background: #4bbc2c;}
+			#mega_content .stn_03{background: #242424;}
+
+			#mega_content .stn_01 .ico{position: absolute;top: 0;right: 30px;}
+            #mega_content label{position: absolute;top: 1178px;left: 50%;transform: translateX(-50%);font-size: 15px;font-family: 'pretendard';display: flex;align-items: center;}
+            #mega_content label input[type="checkbox"] {-webkit-appearance: none;-webkit-box-sizing: border-box;box-sizing: border-box;position: relative;width: 20px;height: 20px;cursor: pointer;outline: none !important;border: 1px solid #111111;margin-right: 1vw;position: relative;margin-right: 10px;border-radius: 2px;}
+            #mega_content label input[type="checkbox"]:checked {background-color: transparent;color: #000;}
+            #mega_content label input[type="checkbox"]::before {content: "\2713";position: absolute;top: 50%;left: 50%;overflow: hidden;transform: scale(0) translate(-50%, -50%);}
+            #mega_content label input[type="checkbox"]:checked::before {transform: scale(1) translate(-50%, -50%);}
+            #mega_content label input[type="checkbox"][disabled] {background-color: #316f26;border: 1px solid #316f26;}
+            #mega_content label a{margin-left: 15px;display: inline-block;background: #316f26;padding: 5px 9px;border-radius: 4px;color: #000;font-size: 14px;font-family: 'pretendard';font-weight: 600;}
+			#mega_content .stn_01 .btn{position: absolute;top: 944px;left: 50%;transform: translateX(-50%);}
+            #mega_content .slot_trigger{cursor: pointer;height: 85px;position: absolute;top: 967px;left: 734px;}
+            #mega_content .slot_trigger div{position: absolute;top: 0;}
+            #mega_content .slot_trigger .ring1{background: #282828;background: linear-gradient(to bottom, #282828 0%, #959595 14%, #d1d1d1 37%, #bababa 49%, #959595 67%, #212121 100%);border-radius: 0 2px 2px 0;box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.8);height: 100%;left: 0;width: 8px;z-index: 2;}
+            #mega_content .slot_trigger .ring1 .shadow{background: linear-gradient(to bottom, rgba(149, 149, 149, 0.2) 0%, rgba(13, 13, 13, 0.18) 46%, rgba(1, 1, 1, 0.18) 50%, rgba(10, 10, 10, 0.18) 53%, rgba(78, 78, 78, 0.17) 76%, rgba(56, 56, 56, 0.16) 87%, rgba(27, 27, 27, 0.15) 100%);border-radius: 0 2px 2px 0;height: 50%;left: 0;opacity: 0;position: absolute;top: 0;width: 10px;z-index: 1;}
+            #mega_content .slot_trigger .ring2{background: #282828;background: linear-gradient(to bottom, #282828 0%, #959595 14%, #d1d1d1 37%, #bababa 49%, #959595 67%, #212121 100%);border-radius: 0 2px 2px 0;box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.8);height: 80%;left: 8px;overflow: hidden;top: 10%;width: 10px;z-index: 1;}
+            #mega_content .slot_trigger .ring2 .shadow{background: linear-gradient(to bottom, rgba(149, 149, 149, 0.15) 0%, rgba(13, 13, 13, 0.15) 46%, rgba(1, 1, 1, 0.15) 50%, rgba(10, 10, 10, 0.15) 53%, rgba(78, 78, 78, 0.15) 76%, rgba(56, 56, 56, 0.15) 87%, rgba(27, 27, 27, 0.15) 100%);border-radius: 0 2px 2px 0;height: 50%;left: 0;opacity: 0;position: absolute;top: 0;width: 10px;z-index: 1;}
+            #mega_content .slot_trigger .arm{background: #0d0d0d;background: linear-gradient(to right, #0d0d0d 0%, #4e4e4e 47%, #383838 87%, #1b1b1b 100%);border-radius: 0 0 4px 4px;box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.8);height: 50%;left: 10px;top: -25px;width: 6px;z-index: 3;overflow: visible !important;}
+            #mega_content .slot_trigger .knob{background: #ff6363;background: radial-gradient(ellipse at center, #ff6363 0%, #cf0404 100%);border-radius: 10px;box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);height: 20px;left: 3px;top: -41px;width: 20px;z-index: 4;}
+            #mega_content .slot_trigger .arm_shadow{background: #000;border-radius: 10px;bottom: 66px;box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);height: 6px;left: 9px;top: auto;width: 8px;z-index: 2;}
+
+            /* 당첨 레이어 */
+			#mega_content .layerPop_ab02 {position: absolute; left: 0; top: 151px; width: 100%; height: 100%; z-index: 100; text-align: center; display: none;}
+			#mega_content .layerPop_ab02 .popInner {display: block; position: relative; margin: 200px auto; width: 684px; z-index: 999;}
+			#mega_content .layerPop_ab02 .btn02 {display: inline-block; }
+			#mega_content .layerPop_ab02 .ly_dim { position: fixed; left: 0; top: 0; z-index: 990; width: 100%; height: 100%; background: rgba(0,0,0,.5); }
+			#mega_content .layerPop_ab02 .bt_popClose {top: 40px; right: 45px;position: absolute; display: block; }
+			#mega_content .layerPop_ab02 .bt_popClose.type2 {top: 500px;right: 50px;position: absolute; display: block; }
+			#mega_content .prize .text_wrap { position: absolute; top: 99px; left: 0;width: 100%; color:#2aff00; letter-spacing: -1.3px; height: 120px; text-align: center; padding-top: 14px;font-weight: bold;line-height: 42px;}
+			#mega_content .prize .text_wrap h5 { font-size: 50px;font-family: 'pretendard';margin-bottom: 20px;}
+			#mega_content .prize p { font-size: 32px;font-family: 'pretendard';color: #fff;}
+			#mega_content .prize p.prd { color:#ffde00; font-size: 32px;}
+            #mega_content .stn_04 .btn{display: block;width: 826px;height: 100px;line-height: 100px;font-size: 40px;font-family: 'pretendard';font-weight: 800;color: #fef500;background: #000;border-radius: 50px;position: absolute;top: 695px;left: 187px;}
+            #mega_content .stn_04 .btn.btn_result{font-size: 32px;color: #fff;font-weight: 600;text-align: center;pointer-events: none;}
+            #mega_content .stn_04 .btn.btn_result span{color: #fef500;font-weight: 800;margin-left: 5px;}
+            #mega_content .stn_04 .btn.btn_end{font-size: 32px;color: #999;pointer-events: none;}
+            
+            /* 플로팅 배너 */
+            #mega_content .floBnrWrap { width:160px;/*배너 가로값 꼭 넣어주세요!*/ top: 150px;/*초기 top값*/ right:0; /*left: 50%; margin-left: 580px;*/ position: absolute; z-index: 2; }
+            #mega_content .floBnrWrap .floBnr { position: absolute; -webkit-transition: all .5s;-moz-transition: all .5s;-ms-transition: all .5s;-o-transition: all .5s;transition: all .5s; }
+            #mega_content .floBnrWrap .floBnr.fixed { top: 150px;/*스크롤시 고정되는 top값*/ position: fixed;}
+            #mega_content .floBnrWrap .floBnr a { display: block; text-align: center;box-shadow: 2px 2px 10px rgb(0,0,0,0.1);margin-bottom: 1px;}
+            #mega_content .floBnrWrap .floBnr .flobnr_top { display: inline-block; margin-left: 94px;}
+		</style>
+        <script>
+           $(function(){
+                head = $('.knob'),
+                stick = $('.arm'),
+                hole = $('.arm_shadow');
+                
+                $('.btn_event, .slot_trigger').click(function(){
+                    TweenMax.set([head, stick, hole], {y:0, scale: 1});
+                    TweenMax.to(head, .4, {y: 70, repeat: 1, yoyo: true, ease:Sine.easeIn});
+                    TweenMax.to(stick, .4, {y: 14, scaleY: .3,transformOrigin:"50% 100%", repeat: 1, yoyo: true, ease:Sine.easeIn});
+                    TweenMax.to(hole, .4, {y: 10, scaleY: 2, repeat: 1, yoyo: true, ease:Sine.easeIn});
+
+                    setTimeout(function(){
+                        $("#ly_absolute").fadeIn();
+                    }, 950);
+                })
+
+                var containerTop = $('#container').offset().top+0;
+                $(window).scroll(function(){
+                    if( $(window).scrollTop() >= containerTop ){
+                        $('.floBnr').addClass('fixed');
+                    }
+                    else{
+                        $('.floBnr').removeClass('fixed');
+                    }
+                });
+           })
+        </script>
+		<div id="mega_content">
+            <div class="floBnrWrap">
+                <div class="floBnr">
+                    <a href="javascript:;" onclick="fnSetFocus('class','stn_01',0)"><img src="https://img.megals.co.kr/2024/0226_newevt/bnr1.png" alt="랜덤 뽑기 이벤트"></a>
+                    <a href="javascript:;" onclick="fnSetFocus('class','stn_02',0)"><img src="https://img.megals.co.kr/2024/0226_newevt/bnr2.png" alt="전원 증정 쿠폰팩"></a>
+                </div>
+            </div>
+			<div class="stn_top">
+				<div class="inner">
+                    <img src="http://img.megals.co.kr/2024/0226_newevt/newevt_top.jpg" alt="합격기운 가득! 응원 선물">
+				</div>
+			</div>
+			<div class="stn_01">
+				<div class="inner">
+                    <img src="http://img.megals.co.kr/2024/0226_newevt/newevt_cont1.jpg" alt="이벤트1 메가로스쿨 신규 회원가입하고 시크릿 랜덤 선물을 뽑아보세요!">
+                    <div class="ico ico1"><img src="http://img.megals.co.kr/2024/0226_newevt/ico1.png" alt="매일 선착순 30명"></div>
+                    <!-- <div class="ico ico2"><img src="http://img.megals.co.kr/2024/0226_newevt/ico2.png" alt="선착순 30명 마감"></div> -->
+                    <!-- <div class="ico ico3"><img src="http://img.megals.co.kr/2024/0226_newevt/ico3.png" alt="마감"></div> -->
+                    <label>
+                        <input type="checkbox" name="" id="" >개인정보 활용 안내를 모두 확인하였고, 이에 동의합니다.
+                        <a href="#;" class="btn_more">자세히 보기 &gt;</a>
+                    </label>
+                    <!-- 뽑기 버튼 -->
+                    <a href="javascript:;"  class="btn_event btn">
+                        <img src="http://img.megals.co.kr/2024/0226_newevt/btn_event.png" alt="선물 뽑기">
+                    </a>
+                    <!-- 마감시 노출 버튼 -->
+                    <!-- <div class="btn_end btn"><img src="http://img.megals.co.kr/2024/0226_newevt/btn_end.png" alt="마감"></div> -->
+                    <div class="slot_trigger">
+                        <div class="arm"></div>
+                        <div class="knob"></div>
+                        <div class="arm_shadow"></div>
+                        <div class="ring1">
+                        <div class="shadow"></div>
+                        </div>
+                        <div class="ring2">
+                        <div class="shadow"></div>
+                        </div>
+                    </div>
+                    <!-- 당첨 레이어팝업 -->
+                    <div class="layerPop_ab02" id="ly_absolute">
+                        <div class="popInner">
+                            <div class="inner_box">
+                                <!-- 당첨 상품 : [투썸플레이스] 떠먹는 스트로베리 초콜릿 생크림 -->
+                                <div class="prize">
+                                    <img src="https://img.megals.co.kr/2024/0226_newevt/prd1.png" alt="[투썸플레이스] 떠먹는 스트로베리 초콜릿 생크림">
+                                    <div class="text_wrap">
+                                        <h5>축하합니다!</h5>
+                                        <p class="prd">[투썸플레이스]<br>떠먹는 스트로베리 초콜릿 생크림</p>
+                                        <p>당첨되셨습니다!</p>
+                                    </div>
+                                </div>
+                                <!-- 당첨 상품 : [맥도날드] 불고기 버거 세트 -->
+                                <!-- <div class="prize">
+                                    <img src="https://img.megals.co.kr/2024/0226_newevt/prd2.png" alt="[맥도날드] 불고기 버거 세트">
+                                    <div class="text_wrap">
+                                        <h5>축하합니다!</h5>
+                                        <p class="prd">[맥도날드]<br>불고기 버거 세트</p>
+                                        <p>당첨되셨습니다!</p>
+                                    </div>
+                                </div> -->
+                                <!-- 당첨 상품 : [굽네치킨] 고추바사삭+바질토마토피자+콜라1.25L -->
+                                <!-- <div class="prize">
+                                    <img src="https://img.megals.co.kr/2024/0226_newevt/prd3.png" alt="[굽네치킨] 고추바사삭+바질토마토피자+콜라1.25L">
+                                    <div class="text_wrap">
+                                        <h5>축하합니다!</h5>
+                                        <p class="prd">[굽네치킨]<br>고추바사삭+바질토마토피자+콜라1.25L</p>
+                                        <p>당첨되셨습니다!</p>
+                                    </div>
+                                </div> -->
+                                <!-- 당첨 상품 : [GS25] 모바일상품권 5천원권 -->
+                                <!-- <div class="prize">
+                                    <img src="https://img.megals.co.kr/2024/0226_newevt/prd4.png" alt="[GS25] 모바일상품권 5천원권">
+                                    <div class="text_wrap">
+                                        <h5>축하합니다!</h5>
+                                        <p class="prd">[GS25]<br>모바일상품권 5천원권</p>
+                                        <p>당첨되셨습니다!</p>
+                                    </div>
+                                </div> -->
+                                <!-- 당첨 상품 : [스타벅스] 아이스 아메리카노 -->
+                                <!-- <div class="prize">
+                                    <img src="https://img.megals.co.kr/2024/0226_newevt/prd5.png" alt="[스타벅스] 아이스 아메리카노">
+                                    <div class="text_wrap">
+                                        <h5>축하합니다!</h5>
+                                        <p class="prd">[스타벅스]<br>아이스 아메리카노</p>
+                                        <p>당첨되셨습니다!</p>
+                                    </div>
+                                </div> -->
+                                <!-- 당첨 상품 : [배스킨라빈스] 파인트 아이스크림 -->
+                                <!-- <div class="prize">
+                                    <img src="https://img.megals.co.kr/2024/0226_newevt/prd6.png" alt="[배스킨라빈스] 파인트 아이스크림">
+                                    <div class="text_wrap">
+                                        <h5>축하합니다!</h5>
+                                        <p class="prd">[배스킨라빈스]<br>파인트 아이스크림</p>
+                                        <p>당첨되셨습니다!</p>
+                                    </div>
+                                </div> -->
+                                <!-- 당첨 상품 : [네이버페이] 포인트 1천원 -->
+                                <!-- <div class="prize">
+                                    <img src="https://img.megals.co.kr/2024/0226_newevt/prd7.png" alt="[네이버페이] 포인트 1천원">
+                                    <div class="text_wrap">
+                                        <h5>축하합니다!</h5>
+                                        <p class="prd">[네이버페이]<br>포인트 1천원</p>
+                                        <p>당첨되셨습니다!</p>
+                                    </div>
+                                </div> -->
+                                <div class="btn_inner">
+                                    <a href="javascript:;" class="bt_popClose" onclick="$(this).parent().parent().parent().parent().fadeOut(100);">
+                                        <img src="https://img.megals.co.kr/2024/0205_event/btn_close.png" class="close_btn" alt="닫기" >
+                                    </a>
+                                </div>
+                            </div>	
+                        </div>
+                        <span class="ly_dim" onclick="$(this).parent().fadeOut(100);"></span>
+                    </div>
+                    <!-- //당첨 레이어팝업 -->
+                </div>
+            </div>
+			<div class="stn_02">
+				<div class="inner">
+                    <img src="http://img.megals.co.kr/2024/0226_newevt/newevt_cont2.jpg" alt="이벤트2 메가로스쿨 회원이라면 누구나 쿠폰 PACK 받아가세요!" usemap="#btn_coupon">
+                    <map name="btn_coupon">
+                        <area shape="rect" coords="324,1190,877,1294" href="#;" alt="쿠폰팩 다운받기">
+                        <area shape="rect" coords="986,1715,1078,1743" href="#;" alt="개인정보 수정">
+                    </map>
+                </div>
+            </div>
+			<div class="stn_03">
+				<div class="inner">
+                    <img src="http://img.megals.co.kr/2024/0226_newevt/newevt_cont3.jpg" alt="LEET 시작이 고민인 수험생이라면?" usemap="#btn_link">
+                    <map name="btn_link">
+                        <area shape="rect" coords="48,304,411,448" href="#;" alt="초시생 가이드 바로가기">
+                        <area shape="rect" coords="421,307,779,448" href="#;" alt="재시생 가이드 바로가기">
+                        <area shape="rect" coords="790,307,1151,450" href="#;" alt="로스쿨 합격수기 바로가기">
+                    </map>
+                </div>
+            </div>
+		</div>
+        <!--// LS 2월 신규가입 이벤트 -->
+		<!--// 풀페이지 끝 -->
+
+	</div>
+	<!--// container -->
+	<!-- footer -->
+	<div id="footer" style="height:139px; background:#f3f3f5; line-height:139px; text-align:center;">FOOTER</div>
+	<!--// footer -->
+</body>
+</html>
+<script type="text/javascript"> 
+	$(document).ready(function() {
+		fnSetFocus( 'id' , 'container' , 0 );
+	});
+</script> 
